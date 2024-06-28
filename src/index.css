@@ -1,5 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: #e9ecef;
+    background-image: url('../public/풍경사진.jpeg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
 }

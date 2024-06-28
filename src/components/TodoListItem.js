@@ -1,9 +1,6 @@
 import React from 'react'
-import {
-    MdCheckBoxOutlineBlank,
-    MdCheckBox,
-    MdRemoveCircleOutline,
-} from 'react-icons/md'
+import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md'
+import { FaRegTrashAlt } from 'react-icons/fa'
 import cn from 'classnames'
 import './TodoListItem.scss'
 
@@ -21,7 +18,7 @@ const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
                     <div className="text">{text}</div>
                 </div>
                 <div className="remove" onClick={() => onRemove(id)}>
-                    <MdRemoveCircleOutline />
+                    <FaRegTrashAlt />
                 </div>
             </div>
         </div>

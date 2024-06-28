@@ -4,18 +4,6 @@ import TodoTemplate from './components/TodoTemplate'
 import TodoInsert from './components/TodoInsert'
 import TodoList from './components/TodoList'
 
-function createBulkTodos() {
-    const array = []
-    for (let i = 1; i <= 4; i++) {
-        array.push({
-            id: i,
-            text: `할 일 ${i}`,
-            checked: false,
-        })
-    }
-    return array
-}
-
 function todoReducer(todos, action) {
     switch (action.type) {
         case 'INSERT': // 새로 추가
@@ -54,7 +42,7 @@ const App = () => {
 
     // 고유 값으로 사용 될 id
     // ref 를 사용하여 변수 담기
-    const nextId = useRef(5)
+    const nextId = useRef(1)
 
     const onInsert = useCallback((text) => {
         const todo = {
